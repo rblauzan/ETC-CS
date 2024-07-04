@@ -36,7 +36,7 @@ const ThemeToggler = () => {
           mask="url(#path-1-inside-1_977:1934)"
         />
       </svg>
-    </button>
+    </button>    
   );
 };
 

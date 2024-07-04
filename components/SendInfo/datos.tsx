@@ -1,3 +1,4 @@
+
 export const construction = [
   { text: "Sin Especificar", value: '' },
   { text: "Ayudante de obra / peon de obra", value: 'Ayudante de obra/peon de obra' },
@@ -27,11 +28,35 @@ export const construction = [
   { text: "Instalador de aislamiento de edificios", value: 'Instalador de aislamiento de edificios' },
 ];
 export const gastronomy = [
-  { text: "Jefe de cocina", value: null },
-  { text: "Subjefe de cocina", value: 'Ayudante de obra/peon de obra' },
-  { text: "Gerente/coordinador de cocina", value: 'Albañil - Caravistero-tabiquero' },
-  { text: "Cocinero", value: 'Alicatador solador' },
-  { text: "Ayudante de cocinero", value: 'Encofrador' },
-  { text: "Servicio de  limpieza", value: 'Ferralista' },
+  { text: "Jefe de cocina", value: 'Jefe de cocina' },
+  { text: "Subjefe de cocina", value: 'Subjefe de cocina' },
+  { text: "Gerente/coordinador de cocina", value: 'Gerente/coordinador de cocina' },
+  { text: "Cocinero", value: 'Cocinero' },
+  { text: "Ayudante de cocinero", value: 'Ayudante de cocinero' },
+  { text: "Servicio de  limpieza", value: 'Servicio de  limpieza' },
  ];
+ export const tiempo = [
+  {text: "0 a 6 meses", value :'0 a 6 meses'},
+  {text: "1 a 2 años", value :'1 a 2 años'},
+  {text: "3 a 5 años", value :'3 a 5 años'},
+  {text: "Más de 5 años", value :'Más de 5 años'},
+ ]
+ export const  pais= [     
+  {text: "Cuba", value :'Cuba'}, 
+  {text: "Argentina", value :'Argentina'},
+  {text: "Brazil", value :'Brazil'},
+  {text: "Colombia", value :'Colombia'},
+  {text: "Paraguay", value :'Paraguay'},
+  {text: "Venezuela", value :'Venezuela'},
+  {text: "Perú", value :'Perú'},
+  {text: "Uruguay ", value :'Uruguay'},
+  {text: "México", value :'México'},
+  {text: "Chile", value :'Chile'},
+  {text: "Bolivia", value :'Bolivia'},
+  {text: "Costa Rica", value :'Costa Rica'},
+  {text: "Guatemala", value :'Guatemala'},
+  {text: "Honduras", value :'Honduras'},
+  {text: "Nicaragua", value :'Nicaragua'},
+  {text: "Panamá", value :'Panamá'},
+ ]
 

@@ -20,12 +20,13 @@ const Hero = () => {
                   Quieres trabajar en Europa?
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Si eres de América Latina, de países como Argentina, Colombia, Cuba
-                  o México, estamos interesados en ofrecerte trabajo en el
+                  Si eres de América Latina, de países como Argentina, Colombia,
+                  Costa Rica, Chile, Panamá, Paraguay, Perú, México, Uruguay o
+                  Venezuela, estamos interesados en ofrecerte trabajo en el
                   sector de la construcción. Si cumples con nuestros requisitos,
-                  te invitamos a consultar la sección de proceso en nuestro
+                  te invitamos a consultar la sección de requisitos en nuestro
                   sitio web. Luego, puedes explorar lo que ofrecemos en la
-                  pestaña de condiciones. Si estás listo, inicia el proceso y
+                  pestaña de “condiciones”. Si estás listo, inicia el proceso y
                   sigue los pasos indicados.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">

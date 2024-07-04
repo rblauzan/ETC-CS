@@ -27,8 +27,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "No tener antecedentes penales",
-    paragraph:
-      "",
+    paragraph: "",
   },
   {
     id: 1,
@@ -42,8 +41,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Tener entre 18 a 40 años de edad",
-    paragraph:
-      "",
+    paragraph: "",
   },
   {
     id: 1,
@@ -57,8 +55,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Tener experiencia en el sector de la construcción",
-    paragraph:
-      "",
+    paragraph: "",
   },
   {
     id: 1,
@@ -72,8 +69,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Ser una persona responsble con ganas de trabajar",
-    paragraph:
-      "",
+    paragraph: "",
   },
   // {
   //   id: 1,

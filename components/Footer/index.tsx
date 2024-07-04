@@ -30,8 +30,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Empresa especializada en el sector de la construcción respaldada por más de 20 años de experiencia.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -102,23 +101,23 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/blogs"
+                      href="/proceso"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Blog
+                     Proceso
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/pricing"
+                      href="/condiciones"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Pricing
+                      Condiciones
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/about"
+                      href="/sobre-nosotros"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Sobre Nosotros
@@ -139,7 +138,7 @@ const Footer = () => {
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      TOS
+                      Políticas de Seguridad
                     </a>
                   </li>
                   <li>
@@ -150,14 +149,14 @@ const Footer = () => {
                       Políticas de Privacidad
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Refund Policy
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -165,33 +164,33 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                  Soporte & Ayuda
                 </h2>
                 <ul>
                   <li>
                     <a
-                      href="/contact"
+                      href="/contacto"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Open Support Ticket
+                      Contacto
+                    </a>
+                  </li>
+                  {/* <li>
+                    <a
+                      href="/proceso"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Proceso
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="/condiciones"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Términos y Condiciones
+                      Condiciones
                     </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/about"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      About
-                    </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
