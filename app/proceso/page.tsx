@@ -1,5 +1,3 @@
-import SharePost from "@/components/Blog/SharePost";
-import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 import Link from "next/link";
 

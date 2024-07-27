@@ -1,6 +1,5 @@
 
-export const construction = [
-  { text: "Sin Especificar", value: '' },
+export const construccion = [
   { text: "Ayudante de obra / peon de obra", value: 'Ayudante de obra/peon de obra' },
   { text: "Albañil - Caravistero-tabiquero", value: 'Albañil - Caravistero-tabiquero' },
   { text: "Alicatador solador", value: 'Alicatador solador' },

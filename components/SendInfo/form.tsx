@@ -1,22 +1,27 @@
 "use client";
 import { toast } from "sonner";
 import { Toaster } from "sonner";
-import { construction } from "./datos";
+import { construccion } from "./datos";
 import { gastronomy } from "./datos";
 import { tiempo } from "./datos";
 import { pais } from "./datos";
 import { enviarSolicitud } from "@/components/SendInfo/action";
 import { useRef } from "react";
+import { ok } from "assert";
 
 export default function Form() {
-  const formRef = useRef<HTMLFormElement>(null);
+  const formRef = useRef<HTMLFormElement>(null); 
   return (
     <form
     ref={formRef}
       action={async (formData) => {
         await enviarSolicitud(formData)
+        formRef.current?.reset();
+        if(enviarSolicitud == ok){
           toast.success("Solicitud Recibida, espere nuevas actualizaciones vía correo electrónico");
-          formRef.current?.reset();
+        }
+        else 
+        toast.error("Ocurrio un error al procesar su solicitud, intente de nuevo");                           
       }}
       method="POST"
     >
@@ -98,9 +103,10 @@ export default function Form() {
               País de Procedencia
             </label>
             <select
-              id="profesiones"
               name="pais"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+              
+              required
             >
               <option disabled selected>
                 Seleccione un país:
@@ -120,20 +126,21 @@ export default function Form() {
               htmlFor="profesiones"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Profesiones (Construction / Gastronomia)
+              Profesiones (Construccion / Gastronomia)
             </label>
             <select
-              id="profesiones"
               name="profesion"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+              
+               required
             >
               <option disabled selected>
                 Seleccione una profesión
               </option>
-              {construction.map((construction) => (
-                <option key={construction.value} value={construction.value}>
+              {construccion.map((construccion) => (
+                <option key={construccion.value} value={construccion.value}>
                   {" "}
-                  {construction.text}{" "}
+                  {construccion.text}{" "}
                 </option>
               ))}
               <hr className=""></hr>
@@ -157,6 +164,8 @@ export default function Form() {
             <select
               name="tiempo"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+              
+               required
             >
               <option disabled selected>
                 Seleccione una opción
@@ -170,7 +179,7 @@ export default function Form() {
             </select>
           </div>
         </div>
-        <div className="w-full px-4 md:w-1/2">
+        {/* <div className="w-full px-4 md:w-1/2">
           <div className="mb-8">
             <label
               htmlFor="file"
@@ -182,10 +191,10 @@ export default function Form() {
               type="file"
               placeholder="Agrege su CV"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-              name="file"
+              name="archivo"
             />
           </div>
-        </div>
+        </div> */}
         <div className="w-full px-4">
           <div className="mb-8">
             <label
@@ -195,7 +204,7 @@ export default function Form() {
               Información extra
             </label>
             <textarea
-              name="mensaje"
+              name="texto"
               rows={5}
               placeholder="Puede proporcionarnos información extra que le ayude con su solicitud"
               className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"

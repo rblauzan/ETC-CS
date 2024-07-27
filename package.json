@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.0",
     "@heroicons/react": "^2.1.4",
+    "@supabase/supabase-js": "^2.44.4",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "^13.5.6",
@@ -22,7 +23,8 @@
     "react-modal-video": "^2.0.0",
     "sonner": "^1.5.0",
     "taobao": "^1.0.9",
-    "tw-elements-react": "^1.0.0-alpha-end"
+    "tw-elements-react": "^1.0.0-alpha-end",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
