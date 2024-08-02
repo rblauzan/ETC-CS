@@ -1,5 +1,6 @@
 import SendInfo from "@/components/SendInfo"
 import { Metadata } from "next";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Solicitud",
@@ -7,9 +8,12 @@ export const metadata: Metadata = {
   // other metadata
 };
 export default function Process() {
-  return ( <>
+  return (
+     <>
     <SendInfo/>  
-    </> )
+     <Toaster position="top-right" expand={true} richColors/>
+    </> 
+    )
   
 }
 

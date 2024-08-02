@@ -1,13 +1,8 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  // i18n: {
-  //   // These are all the locales you want to support in
-  //   // your application
-  //   locales: ['en-US', 'fr', 'nl-NL'],
-  //   // This is the default locale you want to be used when visiting
-  //   // a non-locale prefixed path e.g. `/hello`
-  //   defaultLocale: 'es-ES',
-  // },
+  /* config options here */
   images: {
     domains: ["localhost"],
     remotePatterns: [
@@ -18,11 +13,9 @@ const nextConfig = {
       },
     ],
   },
-    experimental: {
-      serverActions:{
-        allowedOrigins: ['localhost'],
-      },
-    },
-  }
-
-module.exports = nextConfig;
+  experimental: {
+    serverActions: true,
+  },
+};
+ 
+module.exports = nextConfig

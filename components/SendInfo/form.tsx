@@ -1,29 +1,26 @@
 "use client";
 import { toast } from "sonner";
-import { Toaster } from "sonner";
 import { construccion } from "./datos";
 import { gastronomy } from "./datos";
 import { tiempo } from "./datos";
 import { pais } from "./datos";
 import { enviarSolicitud } from "@/components/SendInfo/action";
 import { useRef } from "react";
-import { ok } from "assert";
 
 export default function Form() {
   const formRef = useRef<HTMLFormElement>(null); 
   return (
     <form
     ref={formRef}
-      action={async (formData) => {
-        await enviarSolicitud(formData)
+            action={async (formData) => {
+       const result = await enviarSolicitud(formData)
         formRef.current?.reset();
-        if(enviarSolicitud == ok){
-          toast.success("Solicitud Recibida, espere nuevas actualizaciones vía correo electrónico");
+        if(result?.error){
+          toast.error(result.error);
         }
         else 
-        toast.error("Ocurrio un error al procesar su solicitud, intente de nuevo");                           
+        toast.success(result.message);                           
       }}
-      method="POST"
     >
       <div className="-mx-4 flex flex-wrap">
         <div className="w-full px-4 md:w-1/2">
@@ -105,16 +102,14 @@ export default function Form() {
             <select
               name="pais"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-              
-              required
+              required             
             >
-              <option disabled selected>
-                Seleccione un país:
+              <option disabled>
+                Seleccione un pais
               </option>
               {pais.map((pais) => (
-                <option key={pais.value} value={pais.value}>
-                  {" "}
-                  {pais.text}{" "}
+                <option key={pais.value} defaultValue={"Seleccione un pais:"}>
+                  {pais.text}
                 </option>
               ))}
             </select>
@@ -126,19 +121,19 @@ export default function Form() {
               htmlFor="profesiones"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Profesiones (Construccion / Gastronomia)
+              Profesiones (Construcción / Gastronomia)
             </label>
             <select
               name="profesion"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-              
+
                required
             >
-              <option disabled selected>
+              <option disabled>
                 Seleccione una profesión
               </option>
               {construccion.map((construccion) => (
-                <option key={construccion.value} value={construccion.value}>
+                <option key={construccion.value} defaultValue={"Seleccione una profesión"}>
                   {" "}
                   {construccion.text}{" "}
                 </option>
@@ -167,13 +162,13 @@ export default function Form() {
               
                required
             >
-              <option disabled selected>
+              <option disabled>
                 Seleccione una opción
               </option>
               {tiempo.map((tiempo) => (
-                <option key={tiempo.value} value={tiempo.value}>
+                <option key={tiempo.value} defaultValue={"Seleccione una opción"}>
                   {" "}
-                  {tiempo.text}{" "}
+                  {tiempo.text}
                 </option>
               ))}
             </select>
@@ -219,8 +214,7 @@ export default function Form() {
             Enviar
           </button>
         </div>
-      </div>
-      <Toaster position="top-right" expand={true} richColors/>
+      </div>     
     </form>
   );
 }

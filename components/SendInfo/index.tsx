@@ -1,3 +1,4 @@
+"use client";
 import Form from "./form";
 
 const Info = () => {
@@ -16,7 +17,7 @@ const Info = () => {
               Descubre las oportunidades laborales que tenemos disponibles y
               forma parte de nuestro equipo de profesionales.
             </p>
-            <Form />
+            <Form/>
           </div>
         </div>
         <div className="w-full px-4 lg:w-5/12 xl:w-4/12"></div>
