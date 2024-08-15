@@ -1,7 +1,5 @@
 "use server";
-import { ok } from "assert";
 import { supabase } from "../Supabase/supabase";
-import { error } from "console";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -15,16 +13,6 @@ export const enviarSolicitud = async (formData: FormData) => {
   const tiempo = formData.get("tiempo");
   //const archivo = formData.get("archivo");
   const texto = formData.get("texto");
-  console.log({
-    nombre,
-    apellido,
-    correo,
-    telefono,
-    pais,
-    profesion,
-    tiempo,
-    texto,
-  });
   // Salvar en la base de datos
   try {
     if (!pais || !profesion || !tiempo) {
@@ -48,14 +36,12 @@ export const enviarSolicitud = async (formData: FormData) => {
           "Solicitud Recibida, espere nuevas actualizaciones vía correo electrónico",
       };
      if (data.status === 409) 
-      throw new Error("Su solicitud no ha sido procesada con éxito intente de nuevo");
-
+      throw new Error("Su solicitud no ha sido procesada, intente de nuevo");
      if(data.status === 0)
       throw new Error("En estos momentos no se pudo establecer la conexión con la base de datos");
-    console.log(data);
   } catch(error) {
       return {
-        error: "Ocurrio un error al proceso sus datos, intente de nuevo",
+        error: "Ocurrio un error al proceso sus datos, intente de nuevo más tarde",
     }
   }
   revalidatePath("/solicitud");

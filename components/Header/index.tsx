@@ -1,12 +1,69 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+  const t = useTranslations('Header');
+  const menuData = [
+  {
+    id: 1,
+    title: t('nav1'),
+    path: "/",
+    newTab: false,
+  },
+  {
+    id: 2,
+    title:  t('nav2'),
+    path: "/sobre-nosotros",
+    newTab: false,
+  },
+  {
+    id: 33,
+    title: t('nav3'),
+    path: "/proceso",
+    newTab: false,
+  },
+  {
+    id: 3,
+    title: t('nav4'),
+    path: "/condiciones",
+    newTab: false,
+  },
+  {
+    id: 3,
+    title: t('nav5'),
+    path: "/contact",
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: t('nav6'),
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: t('nav61'),
+        path: "/pol",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: t('nav62'),
+        path: "/en",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: t('nav63'),
+        path: "/es",
+        newTab: false,
+      },
+    ],
+  },
+];
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -35,9 +92,7 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
-
   const usePathName = usePathname();
-
   return (
     <>
       <header
@@ -159,8 +214,7 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                
+              <div className="flex items-center justify-end pr-16 lg:pr-0">                
                 <div>
                   <ThemeToggler />
                 </div>

@@ -1,8 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const t = useTranslations('Footer')
   return (
     <>
       <footer
@@ -31,7 +33,7 @@ const Footer = () => {
                   /> */}
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Empresa especializada en el sector de la construcción respaldada por más de 20 años de experiencia.
+                  {t('title')}
                 </p>
                 <div className="flex items-center">
                   <a
@@ -93,11 +95,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Enlaces Más Usados
+                  {t('menu1')}
                 </h2>
                 <ul>
                   <li>
@@ -105,7 +106,7 @@ const Footer = () => {
                       href="/proceso"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                     Proceso
+                     {t('submenu1')}
                     </a>
                   </li>
                   <li>
@@ -113,7 +114,7 @@ const Footer = () => {
                       href="/condiciones"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Condiciones
+                      {t('submenu2')}
                     </a>
                   </li>
                   <li>
@@ -121,7 +122,7 @@ const Footer = () => {
                       href="/sobre-nosotros"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Sobre Nosotros
+                      {t('submenu3')}
                     </a>
                   </li>
                 </ul>
@@ -131,7 +132,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Términos
+                  {t('menu2')}
                 </h2>
                 <ul>
                   <li>
@@ -139,7 +140,7 @@ const Footer = () => {
                       href="/politicasS"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Políticas de Seguridad y Privacidad
+                      {t('submenu4')}
                     </a>
                   </li>                 
                   {/* <li>
@@ -157,7 +158,7 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Soporte & Ayuda
+                 {t('menu3')}
                 </h2>
                 <ul>
                   <li>
@@ -165,7 +166,7 @@ const Footer = () => {
                       href="/contacto"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      Contacto
+                     {t('submenu5')}
                     </a>
                   </li>
                   {/* <li>
@@ -192,7 +193,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Desarrollada por Edmundo Technology              
+              {t('made')}          
             </p>
           </div>
         </div>

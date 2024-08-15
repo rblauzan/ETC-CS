@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
+  const t = useTranslations('Contact')
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">

@@ -1,4 +1,6 @@
 import { Feature } from "@/types/feature";
+import { useTranslations } from "next-intl";
+
 
 const featuresData: Feature[] = [
   {
@@ -71,50 +73,5 @@ const featuresData: Feature[] = [
     title: "Ser una persona responsble con ganas de trabajar",
     paragraph: "",
   },
-  // {
-  //   id: 1,
-  //   icon: (
-  //     <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-  //       <path
-  //         opacity="0.5"
-  //         d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
-  //       />
-  //       <rect width="28" height="28" rx="1" />
-  //     </svg>
-  //   ),
-  //   title: "Todos nuestras ofertas laborales se realizan bajo contrato legal y en base a la Ley ",
-  //   paragraph:
-  //     "",
-  // },
-  // {
-  //   id: 1,
-  //   icon: (
-  //     <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-  //       <path
-  //         opacity="0.5"
-  //         d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
-  //       />
-  //       <rect width="28" height="28" rx="1" />
-  //     </svg>
-  //   ),
-  //   title: "Todas las condiciones de nuestras ofertas laborales estan claramente detallas y explicadas ",
-  //   paragraph:
-  //     "",
-  // },
-  // {
-  //   id: 1,
-  //   icon: (
-  //     <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
-  //       <path
-  //         opacity="0.5"
-  //         d="M39 12C39.5523 12 40 12.4477 40 13V39C40 39.5523 39.5523 40 39 40H13C12.4477 40 12 39.5523 12 39V33C12 32.4477 12.4477 32 13 32H31C31.5523 32 32 31.5523 32 31V13C32 12.4477 32.4477 12 33 12H39Z"
-  //       />
-  //       <rect width="28" height="28" rx="1" />
-  //     </svg>
-  //   ),
-  //   title: "Vamos a estar para guiarte y acompañarte en cada oferta laboral ",
-  //   paragraph:
-  //     "",
-  // },
 ];
 export default featuresData;

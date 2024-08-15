@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { useTranslations } from "next-intl";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -16,7 +17,7 @@ const AboutSectionOne = () => {
       {text}
     </p>
   );
-
+  const t = useTranslations('AboutSectionOne');
   return (
     <>
       <section className="pb-[120px] pt-[150px]">
@@ -25,7 +26,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                  Sobre Nosotros
+                 {t('title')}
                 </h2>
                 <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
@@ -40,29 +41,13 @@ const AboutSectionOne = () => {
                   </div>
                 <div>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Nuestra empresa tiene su sede en la ciudad de Lodz, ubicada
-                    en el centro de Polonia. Nos especializamos en el sector de
-                    la construcción y nos enorgullece ofrecer servicios
-                    profesionales respaldados por más de 20 años de experiencia.
-                    Durante este tiempo, hemos establecido una sólida red de
-                    contactos y adquirido la sabiduría necesaria para llevar a
-                    cabo proyectos de manera eficiente y efectiva desde el
-                    inicio.
+                    {t('1')}
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Nuestro compromiso con la legalidad es fundamental.
-                    Ofrecemos empleo legal y proporcionamos asesoría jurídica a
-                    nuestros empleados. Además, para aquellos que se unan a
-                    nuestro equipo, ofrecemos opciones de alojamiento y comida,
-                    lo que garantiza un entorno cómodo y favorable para
-                    trabajar.
+                   {t('2')}
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    En este momento, estamos enfocados en expandirnos al mercado
-                    alemán e italiano. Creemos que nuestra experiencia y
-                    dedicación nos permitirán establecernos con éxito en estos
-                    países y brindar un servicio excepcional a nuestros
-                    clientes.
+                   {t('3')}
                   </p>
                 </div>
               </div>

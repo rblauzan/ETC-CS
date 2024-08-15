@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const AboutSectionTwo = () => {
+  const t = useTranslations('AboutSectionTwo');
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -30,26 +32,26 @@ const AboutSectionTwo = () => {
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Seguridad
+                  {t('title1')}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Todos nuestras ofertas laborales se realizan bajo contrato legal y en base a la Ley.
+                {t('text1')}
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Transparencia
+                  {t('title2')}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Todas las condiciones de nuestras ofertas laborales estan claramente detallas y explicadas. 
+                {t('text2')}
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                 Comunicación
+                  {t('title3')}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                 Vamos a estar para guiarte y acompañarte en cada paso. 
+                 {t('text3')}
                 </p>
               </div>
             </div>

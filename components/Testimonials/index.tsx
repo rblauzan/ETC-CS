@@ -1,38 +1,39 @@
-import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import { useTranslations } from "next-intl";
 
-const testimonialData: Testimonial[] = [
+
+
+const Testimonials = () => {
+  const t = useTranslations('Testimonial');
+  const testimonialData = [
   {
     id: 1,
     content:
-      "Al principio creía que era mentira pero necesitaba intentarlo porque no conseguia trabajo, agradezco a Dios por haberlo intentado ya que hoy en día estoy trabajando en Polonia.",
+      t('op1'),
     star: 5,
   },
   {
     id: 2,
     content:
-      "Envié los datos que pedían en el registro y en muy poco tiempo estaba trabajando en Polonia.",
+      t('op2'),
     star: 4,
   },
   {
     id: 3,
     content:
-      "Muchas gracias por la oportunidad de trabajo, he tenido una buena experiencia trabajando en el equipo.",
+      t('op3'),
     star: 3,
   },
 ];
-
-const Testimonials = () => {
   return (
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Opiniones de Nuestros Clientes"
+          title={t('title')}
           paragraph=""
           center
         />
-
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />

@@ -5,20 +5,20 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import ModalVideo from "react-modal-video";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
-
+  const t = useTranslations('Video');
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Nuestros proyectos"
+          title={t('title')}
           paragraph=""
           center
           mb="60px"
         />
-
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div

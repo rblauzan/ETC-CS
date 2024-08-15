@@ -1,6 +1,4 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   /* config options here */
   images: {
@@ -17,5 +15,8 @@ const nextConfig = {
     serverActions: true,
   },
 };
- 
-module.exports = nextConfig
+const createNextIntlPlugin = require("next-intl/plugin");
+const withNextIntl = createNextIntlPlugin();
+
+module.exports = withNextIntl(nextConfig);
+

@@ -1,14 +1,77 @@
 "use client";
 import { toast } from "sonner";
-import { construccion } from "./datos";
-import { gastronomy } from "./datos";
-import { tiempo } from "./datos";
-import { pais } from "./datos";
 import { enviarSolicitud } from "@/components/SendInfo/action";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Form() {
   const formRef = useRef<HTMLFormElement>(null); 
+  const t = useTranslations('Info');
+  const tr = useTranslations('Construction');
+  const tra = useTranslations('Gastronomy');
+  const tran = useTranslations('Time');
+  const transl = useTranslations('Pais');
+  
+ const construccion = [
+  { value: tr('ayudante') },
+  { value: tr('albañil') },
+  { value: tr('solador') },
+  { value: tr('encofrador') },
+  { value: tr('ferralista') },
+  { value: tr('carpintero') },
+  { value: tr('carpintero2') },
+  { value: tr('cerrajero') },
+  { value: tr('demolicion') },
+  { value: tr('techador') },
+  { value: tr('pintor') },
+  { value: tr('cristal') },
+  { value: tr('solder') },
+  { value: tr('chapista') },
+  { value: tr('electrico') },
+  { value: tr('plomero') },
+  { value: tr('pulidor') },
+  { value: tr('grua') },
+  { value: tr('conductor') },
+  { value: tr('colador') },
+  { value: tr('tallista')},
+  { value: tr('gas') },
+  { value: tr('instalador') },
+  { value: tr('calefacción') },
+  { value: tr('jefe') },
+  { value: tr('aislador') },
+];
+ const gastronomy = [
+  { value: tra('jcocina')},
+  { value: tra('subcocina')},
+  { value: tra('gcocina')},
+  { value: tra('cocinero')},
+  { value: tra('acocinero')},
+  { value: tra('limpieza')},
+ ];
+  const tiempo = [
+  { value : tran('time1')},
+  { value : tran('time2')},
+  { value : tran('time3')},
+  { value : tran('time4')},
+ ]
+  const  pais = [     
+  { value :transl('cuba')}, 
+  { value :transl('argentina')},
+  { value :transl('brazil')},
+  { value :transl('colombia')},
+  { value :transl('paraguay')},
+  { value :transl('venezuela')},
+  { value :transl('perú')},
+  { value :transl('uruguay')},
+  { value :transl('méxico')},
+  { value :transl('chile')},
+  { value :transl('bolivia')},
+  { value :transl('costa Rica')},
+  { value :transl('guatemala')},
+  { value :transl('honduras')},
+  { value :transl('nicaragua')},
+  { value :transl('panamá')},
+ ]
   return (
     <form
     ref={formRef}
@@ -29,11 +92,11 @@ export default function Form() {
               htmlFor="name"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Nombre
+              {t('name')}
             </label>
             <input
               type="text"
-              placeholder="Ingrese su nombre"
+              placeholder={t('placename')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="nombre"
               required
@@ -46,11 +109,11 @@ export default function Form() {
               htmlFor="name"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Apellido
+              {t('secondname')}
             </label>
             <input
               type="text"
-              placeholder="Ingrese su apellido"
+              placeholder={t('placesecondname')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="apellido"
               required
@@ -63,11 +126,11 @@ export default function Form() {
               htmlFor="email"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Correo
+              {t('email')}
             </label>
             <input
               type="email"
-              placeholder="Ingrese su correo"
+              placeholder={t('placeemail')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="correo"
               required
@@ -80,11 +143,11 @@ export default function Form() {
               htmlFor="tel"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Número de Telefóno
+             {t('phone')}
             </label>
             <input
               type="tel"
-              placeholder="Ingrese su numero de teléfono (+53 55001133)"
+              placeholder={t('placephone')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="telefono"
               required
@@ -97,7 +160,7 @@ export default function Form() {
               htmlFor="profesiones"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              País de Procedencia
+              {t('country')}
             </label>
             <select
               name="pais"
@@ -105,11 +168,11 @@ export default function Form() {
               required             
             >
               <option disabled>
-                Seleccione un pais
+               {t('option')}
               </option>
               {pais.map((pais) => (
                 <option key={pais.value} defaultValue={"Seleccione un pais:"}>
-                  {pais.text}
+                  {pais.value}
                 </option>
               ))}
             </select>
@@ -121,7 +184,7 @@ export default function Form() {
               htmlFor="profesiones"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Profesiones (Construcción / Gastronomia)
+              {t('profesiones')}
             </label>
             <select
               name="profesion"
@@ -130,19 +193,19 @@ export default function Form() {
                required
             >
               <option disabled>
-                Seleccione una profesión
+                 {t('option1')}
               </option>
               {construccion.map((construccion) => (
                 <option key={construccion.value} defaultValue={"Seleccione una profesión"}>
                   {" "}
-                  {construccion.text}{" "}
+                  {construccion.value}{" "}
                 </option>
               ))}
               <hr className=""></hr>
               {gastronomy.map((gastronomy) => (
                 <option key={gastronomy.value} value={gastronomy.value}>
                   {" "}
-                  {gastronomy.text}{" "}
+                  {gastronomy.value}{" "}
                 </option>
               ))}
             </select>
@@ -154,21 +217,20 @@ export default function Form() {
               htmlFor="tiempo"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Tiempo que ha trabajado en la profesión
+             {t('tiempo')}
             </label>
             <select
               name="tiempo"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-              
                required
             >
               <option disabled>
-                Seleccione una opción
+                {t('option2')}
               </option>
               {tiempo.map((tiempo) => (
                 <option key={tiempo.value} defaultValue={"Seleccione una opción"}>
                   {" "}
-                  {tiempo.text}
+                  {tiempo.value}
                 </option>
               ))}
             </select>
@@ -196,12 +258,12 @@ export default function Form() {
               htmlFor="mensaje"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              Información extra
+              {t('infoextra')}
             </label>
             <textarea
               name="texto"
               rows={5}
-              placeholder="Puede proporcionarnos información extra que le ayude con su solicitud"
+              placeholder={t('placeinfoextra')}
               className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             ></textarea>
           </div>
@@ -211,7 +273,7 @@ export default function Form() {
             type="submit"
             className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
           >
-            Enviar
+            {t('button')}
           </button>
         </div>
       </div>     

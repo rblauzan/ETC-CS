@@ -1,7 +1,9 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Form from "./form";
 
 const Info = () => {
+  const t = useTranslations('Info')
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 ">
       <div className="container">
@@ -11,11 +13,10 @@ const Info = () => {
             data-wow-delay=".15s"
           >
             <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-              Unete a nuestro equipo
+             {t('title1')}
             </h2>
             <p className="mb-12 text-base font-medium text-body-color">
-              Descubre las oportunidades laborales que tenemos disponibles y
-              forma parte de nuestro equipo de profesionales.
+             {t('title2')}
             </p>
             <Form/>
           </div>
