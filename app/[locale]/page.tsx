@@ -10,6 +10,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ETC Construction Services",
   description: "This is the HomePage for ETC Construction Services",
+  keywords:"europa,construccion,construction,"
+  
   // other metadata
 };
 

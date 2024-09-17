@@ -92,9 +92,6 @@
     "submenu5": "Kontakt",
     "made": "Opracowane przez Edmundo Technology"
   },
-  "Route": {
-    "link1": "Proces"
-  },
   "Features": {
     "title": "Wymagania",
     "paragraph": "Aktualnie poszukujemy osób do współpracy z nami. Co jest potrzebne:",
@@ -174,5 +171,14 @@
     "honduras": "Honduras",
     "nicaragua": "Nikaragua",
     "panamá": "Panamá"
+  },
+  "Auth": {
+    "title": "",
+    "description": "",
+    "email": "",
+    "placeholderemail": "",
+    "pass": "",
+    "placeholderpass": "",
+    "button": ""
   }
 }

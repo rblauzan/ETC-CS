@@ -23,6 +23,12 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "app/[locale]/admin/dashboard.jsx"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "app/[locale]/(admin)/dashboard.jsx"
+  ],
   "exclude": ["node_modules"]
 }

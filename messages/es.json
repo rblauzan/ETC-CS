@@ -171,6 +171,15 @@
    "honduras": "Honduras",
    "nicaragua": "Nicaragua",
    "panamá": "Panamá"
+  },
+  "Auth": {
+    "title": "Inicie sección con su correo",
+    "description": "Solo para administradores del sitio",
+    "email": "Correo",
+    "placeholderemail": "Ingrese su correo",
+    "pass": "Contraseña",
+    "placeholderpass": "Ingrese su contraseña",
+    "button": "Iniciar"
   }
 }
 

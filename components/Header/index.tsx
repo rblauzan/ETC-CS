@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 const Header = () => {
   const t = useTranslations('Header');
+  const params = usePathname().substring(4);
   const menuData = [
   {
     id: 1,
@@ -17,7 +18,7 @@ const Header = () => {
   {
     id: 2,
     title:  t('nav2'),
-    path: "/sobre-nosotros",
+    path: '/sobre-nosotros',
     newTab: false,
   },
   {
@@ -35,7 +36,7 @@ const Header = () => {
   {
     id: 3,
     title: t('nav5'),
-    path: "/contact",
+    path: "/nuestros_proyectos",
     newTab: false,
   },
   {
@@ -46,19 +47,19 @@ const Header = () => {
       {
         id: 41,
         title: t('nav61'),
-        path: "/pol",
+        path: `/pol/${params}`,
         newTab: false,
       },
       {
         id: 42,
         title: t('nav62'),
-        path: "/en",
+        path: `/en/${params}`,
         newTab: false,
       },
       {
         id: 43,
         title: t('nav63'),
-        path: "/es",
+        path: `/es/${params}`,
         newTab: false,
       },
     ],

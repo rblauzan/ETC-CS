@@ -92,9 +92,6 @@
     "submenu5": "Contact",
     "made": "Developed by Edmundo Technology"
   },
-  "Route": {
-    "link1": "Process"
-  },
   "Features": {
     "title": "Requirements",
     "paragraph": "We are currently looking for staff to work with us. What is needed:",
@@ -110,7 +107,7 @@
     "nav3": "Process",
     "nav4": "Conditions",
     "nav5": "Our projects",
-    "nav6": "Idiom",
+    "nav6": "Language",
     "nav61": "Polish",
     "nav62": "English",
     "nav63": "Spanish"
@@ -155,7 +152,7 @@
     "time1": "0 to 6 month",
     "time2": "1 to 2 years",
     "time3": "3 to 5 years",
-    "time4": "More de 5 years"
+    "time4": "More than 5 years"
   },
   "Pais": {
     "cuba": "Cuba",
@@ -174,5 +171,14 @@
     "honduras": "Honduras",
     "nicaragua": "Nicaragua",
     "panamá": "Panamá"
+  },
+  "Auth": {
+    "title" : "Sign in with your email",
+    "description" : "Only for administrators of this site",
+    "email" : "Your Email",
+    "placeholderemail" : "Enter your Email",
+    "pass" : "Your Password",
+    "placeholderpass" : "Enter your Password",
+    "button" : "Sign in"
   }
 }

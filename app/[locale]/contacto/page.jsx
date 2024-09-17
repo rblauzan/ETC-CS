@@ -1,6 +1,10 @@
+import Card from "@/components/Contact/Card"
+
  export default function Contacto() {
-    return (       
-        <h1>Pagina de Contacto</h1>      
-        
+    return (  
+        <>
+         <Card/> 
+        </>     
+           
     )
 }
