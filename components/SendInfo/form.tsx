@@ -82,7 +82,7 @@ export default function Form() {
           toast.error(result.error);
         }
         else 
-        toast.success(result.message);                           
+        toast.success(result.message);
       }}
     >
       <div className="-mx-4 flex flex-wrap">
