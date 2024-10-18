@@ -1,67 +1,104 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Card() {
+  
+  const t = useTranslations('Contact')
   return (
     <>
-      {/* <section  className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
-      <div className="container"> 
-        <div className="-mx-4 flex flex-wrap">
+      <section className="relative z-6 overflow-hidden pb-[120px] pt-[150px] md:pb-20 lg:pb-28 lg:pt-[180px]">
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-    <div className="dark bg-[#1f2937] text-[#f3f4f6] rounded-lg shadow-lg p-6 max-w-sm mx-auto">
-      <div className="flex items-center space-x-4">
-        <div className="bg-[#4b5563] rounded-full w-16 h-16 flex items-center justify-center text-4xl font-bold">
-          JD
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold">ETC-CS</h3>
-          <p className="text-[#9ca3af] font-medium">Software Engineer</p>
-        </div>
+        <div className="isolate bg-white px-10 py-20 sm:py-32 lg:px-8 shadow-three dark:bg-dark sm:p-[60px]">
+      <div className="mx-auto max-w-2xl sm:text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">{t('title')}</h2>
+        <p className="mt-2 text-lg leading-8 text-white-600">
+          {t('description')}
+        </p>
       </div>
-      <div className="mt-6 space-y-4">
-        <div className="flex items-center space-x-2">
-          <MailIcon className="w-5 h-5 text-[#9ca3af]" />
-          <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-            john@example.com
-          </Link>
-        </div>
-        <div className="flex items-center space-x-2">
-          <PhoneIcon className="w-5 h-5 text-[#9ca3af]" />
-          <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-            +1 (234) 567-890
-          </Link>
-        </div>
-        <div className="flex items-center space-x-2">
-          <LinkIcon className="w-5 h-5 text-[#9ca3af]" />
-          <div className="flex items-center space-x-4">
-            <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-              Facebook
-            </Link>
-            {/* <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-              Twitter
-            </Link>
-            <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-              GitHub
-            </Link> 
+      <div className="mx-auto mt-20 max-w-lg space-y-16">
+        <div className="flex gap-x-6">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600">
+            <MailIcon className="h-6 w-6 text-white" aria-hidden="true" />
+          </div>
+          <div>
+            <h3 className="text-base font-semibold leading-7 text-white-900">{t('email')}</h3>
+            <p className="mt-2 leading-7 text-white-600">
+              {t('emailtext')}
+            </p>
+            <p className="mt-4">
+               <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
+                    <div className="flex items-center space-x-2">                     
+                      <MailIcon className="h-5 w-5 text-[#9ca3af]" />
+                      <Link
+                        href="#"
+                        className="text-l [#d1d5db] transition-colors hover:text-[#9ca3af] hover:underline"
+                      >
+                        john@example.com
+                      </Link>
+                    </div>
+                  </div>
+            </p>
           </div>
         </div>
-      </div>
-      <div className="mt-6 border-t border-[#4b5563] pt-4">
-        <div className="flex items-center justify-between">
-          <button className="bg-[#4b5563] text-[#f3f4f6] px-4 py-2 rounded-md hover:bg-[#6b7280] transition-colors">
-            Follow
-          </button>
-          <button className="bg-[#4b5563] text-[#f3f4f6] px-4 py-2 rounded-md hover:bg-[#6b7280] transition-colors">
-            Message
-          </button>
+        <div className="flex gap-x-6">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600">
+            <PhoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
+          </div>
+          <div>
+            <h3 className="text-base font-semibold leading-7 text-white-900">{t('whatsapp')}</h3>
+            <p className="mt-2 leading-7 text-white-600">
+              {t('whatsapptext')}
+            </p>
+            <p className="mt-4">
+              <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
+              <div className="flex items-center space-x-2">
+                      <PhoneIcon className="h-10 w-10 text-[#9ca3af]" />
+                      <Link
+                        href="#"
+                        className="text-l [#d1d5db] transition-colors hover:text-[#9ca3af] hover:underline"
+                      >
+                        +1 (234) 567-890
+                      </Link>
+                    </div>
+                    </div>
+            </p>
+          </div>
         </div>
+        <div className="flex gap-x-6">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600">
+            <LinkIcon className="h-6 w-6 text-white" aria-hidden="true" />
+          </div>
+          <div>
+            <h3 className="text-base font-semibold leading-7 text-white-900">{t('form')}</h3>
+            <p className="mt-2 leading-7 text-white-600">
+              {t('formtext')}
+            </p>
+            <p className="mt-4">
+               <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
+              <div className="flex items-center space-x-2">
+                      <LinkIcon className="h-10 w-10 text-[#9ca3af]" />
+                      <Link
+                        href="/solicitud"
+                        className="text-l [#d1d5db] transition-colors hover:text-[#9ca3af] hover:underline"
+                      >
+                       Aplicar
+                      </Link>
+                    </div>
+                    </div>
+            </p>
+          </div>
+        </div>
+        <p className="mt-2 text-lg leading-8 text-white-600">
+          {t('footer')}
+        </p>
       </div>
     </div>
     </div>
     </div>
     </div>
-    </section> */}
-      <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
-        <div className="container">
+        {/* <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[500px] rounded bg-white px-6 py-10 shadow-three dark:bg-dark sm:p-[60px]">
@@ -78,7 +115,7 @@ export default function Card() {
                 </div>
                 <div className="mt-6 space-y-4">
                   <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-2">                     
                       <MailIcon className="h-10 w-10 text-[#9ca3af]" />
                       <Link
                         href="#"
@@ -121,13 +158,12 @@ export default function Card() {
           </div>
         </div>
       </div>
-                
-        {/* Background */}
+        Background 
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="absolute left-0 top-0 z-[-1]">
           <svg
             width="1440"

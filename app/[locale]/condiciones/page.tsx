@@ -30,9 +30,6 @@ const ContactPage = () => {
                   </div>
                 </div>
                 <div>
-                  <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
-                    {t('subtitle')}
-                  </h5>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                       <Image
@@ -47,7 +44,7 @@ const ContactPage = () => {
                     {t('text1')}
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    {t('text2')} {t('text3')}
+                    {t('text2')} 
                   </p>
                   <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
                     {t('paso1')}
@@ -55,10 +52,6 @@ const ContactPage = () => {
                   <ul className="mb-10 list-inside list-disc text-body-color">
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       {t('text4')}
-                       <Link href={"/condiciones"} className="text-white">
-                        <u>{t('link')}</u>
-                       </Link>
-                      {t('text41')}
                     </li>
                     <br></br>
                     <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
@@ -66,25 +59,13 @@ const ContactPage = () => {
                     </h5>
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       {t('text5')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text51')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text52')}
-                    </li>
+                    </li>                    
                     <br></br>
                     <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
                      {t('paso3')}
                     </h5>
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       {t('text6')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text61')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text62')}
                     </li>
                     <br></br>
                     <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
@@ -93,12 +74,6 @@ const ContactPage = () => {
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       {t('text7')}
                     </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                       {t('text71')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                       {t('text72')}
-                    </li>
                     <br></br>
                     <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
                      {t('paso5')}
@@ -106,33 +81,11 @@ const ContactPage = () => {
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       {t('text8')}
                     </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text81')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text82')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text83')}
-                    </li>
-                    <br></br>
-                    <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
-                      {t('paso6')}
-                    </h5>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      {t('text9')}
-                    </li>
-                    <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                     {t('text91')}
-                    </li>
+                    <br></br>                    
                   </ul>  
                   <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="/solicitud"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    {t('button')}
-                  </Link>
+                  <h4 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">{t('text10')}                    
+                  </h4>
                 </div>                
                   {/* <div className="items-center justify-between sm:flex">
                     <div className="mb-5">

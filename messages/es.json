@@ -149,28 +149,28 @@
     "limpieza": "Servicio de limpieza"
   },
   "Time": {
-  "time1":"0 a 6 meses",
-  "time2":"1 a 2 años",
-  "time3":"3 a 5 años",
-  "time4":"Más de 5 años"
+    "time1": "0 a 6 meses",
+    "time2": "1 a 2 años",
+    "time3": "3 a 5 años",
+    "time4": "Más de 5 años"
   },
-  "Pais":{
+  "Pais": {
     "cuba": "Cuba",
-   "argentina" : "Argentina",
-   "brazil": "Brazil",
-   "colombia": "Colombia",
-   "paraguay": "Paraguay",
-   "venezuela": "Venezuela",
-   "perú": "Perú",
-   "uruguay": "Uruguay",
-   "méxico": "Mexico",
-   "chile": "Chile",
-   "bolivia": "Bolivia",
-   "costa Rica": "Costa Rica",
-   "guatemala": "Guatemala",
-   "honduras": "Honduras",
-   "nicaragua": "Nicaragua",
-   "panamá": "Panamá"
+    "argentina": "Argentina",
+    "brazil": "Brazil",
+    "colombia": "Colombia",
+    "paraguay": "Paraguay",
+    "venezuela": "Venezuela",
+    "perú": "Perú",
+    "uruguay": "Uruguay",
+    "méxico": "Mexico",
+    "chile": "Chile",
+    "bolivia": "Bolivia",
+    "costa Rica": "Costa Rica",
+    "guatemala": "Guatemala",
+    "honduras": "Honduras",
+    "nicaragua": "Nicaragua",
+    "panamá": "Panamá"
   },
   "Auth": {
     "title": "Inicie sección con su correo",
@@ -180,6 +180,32 @@
     "pass": "Contraseña",
     "placeholderpass": "Ingrese su contraseña",
     "button": "Iniciar"
+  },
+  "Conditions": {
+    "title": "Nuestras Condiciones de Trabajo",
+    "text1": "En [Nombre de tu Empresa], nos comprometemos a proporcionar un entorno de trabajo cómodo y de apoyo para todos nuestros empleados.",
+    "text2": "A continuación, se detallan las principales condiciones y beneficios que ofrecemos:",
+    "paso1": "Alojamiento:",
+    "text4": "Ofrecemos alojamiento de calidad a un costo de 500-600 zł por mes, dependiendo de la ubicación y las opciones disponibles",
+    "paso2": "Comida:",
+    "text5": "El costo de la comida varía según la opción de alimentación seleccionada. Ofrecemos orientación para ayudarte a elegir el plan más adecuado.",
+    "paso3": "Exámenes Médicos:",
+    "text6": "Todos los exámenes médicos necesarios para el trabajo serán organizados y cubiertos por la empresa, asegurando tu preparación para el trabajo.",
+    "paso4": "Salario:",
+    "text7": "El salario neto es de 22 zł por hora. Para un trabajo a tiempo completo (40 horas por semana), esto equivale a aproximadamente 3,262 zł neto al mes.",
+    "paso5": "Horario de Trabajo:",
+    "text8": "El horario laboral estándar es de lunes a viernes, 40 horas por semana. Pueden estar disponibles horas extras, que serán compensadas adecuadamente. Generalmente no trabajamos los fines de semana, aunque ocasionalmente puede haber trabajo adicional los sábados, que también será remunerado.",
+    "text10": "Si tienes alguna pregunta adicional sobre las condiciones de trabajo, no dudes en contactarnos. ¡Estamos aquí para apoyarte en cada paso del camino!"
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "description": "En [Nombre de tu Empresa], valoramos la comunicación abierta y estamos aquí para ayudarte. Puedes contactarnos a través de los siguientes métodos:",
+    "email": "Correo Electrónico",
+    "emailtext": "Para consultas generales, envíanos un correo. Nos esforzamos por responder rápidamente.",
+    "whatsapp": "WhatsApp",
+    "whatsapptext": "Para asuntos urgentes, no dudes en contactarnos a través de WhatsApp. Nos proponemos abordar consultas urgentes rápidamente.",
+    "form": "Formulario de Solicitud de Empleo",
+    "formtext": "Para comenzar tu solicitud de empleo, completa nuestro Formulario de Solicitud de Empleo. Revisaremos tu solicitud y nos pondremos en contacto contigo lo antes posible.",
+    "footer": "¡Esperamos tener noticias tuyas!"
   }
 }
-

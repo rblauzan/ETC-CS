@@ -173,12 +173,39 @@
     "panamá": "Panamá"
   },
   "Auth": {
-    "title" : "Sign in with your email",
-    "description" : "Only for administrators of this site",
-    "email" : "Your Email",
-    "placeholderemail" : "Enter your Email",
-    "pass" : "Your Password",
-    "placeholderpass" : "Enter your Password",
-    "button" : "Sign in"
+    "title": "Sign in with your email",
+    "description": "Only for administrators of this site",
+    "email": "Your Email",
+    "placeholderemail": "Enter your Email",
+    "pass": "Your Password",
+    "placeholderpass": "Enter your Password",
+    "button": "Sign in"
+  },
+  "Conditions": {
+    "title": "Our Work Conditions",
+    "text1": "At [Your Company Name], we are committed to ensuring a comfortable and supportive work environment for all our employees.",
+    "text2": "Below are the key conditions and benefits we offer:",
+    "paso1": "Accommodation:",
+    "text4": "We provide quality accommodation at a cost of 500-600 zł per month, depending on the location and available options.",
+    "paso2": "Food:",
+    "text5": "The cost of food will vary based on your selected meal option. We offer guidance to help you choose the most suitable plan.",
+    "paso3": "Medical Exams:",
+    "text6": "All necessary medical examinations required for work will be arranged and covered by the company, ensuring your readiness for the job.",
+    "paso4": "Salary:",
+    "text7": "The net hourly wage is 22 zł. For full-time employment (40 hours per week), this amounts to approximately 3,262 zł net per month.",
+    "paso5": "Work Hours:",
+    "text8": " Our standard work schedule is from Monday to Friday, 40 hours per week. Extra hours may be available and are compensated accordingly. While we typically do not work on weekends, there may occasionally be additional work on Saturdays, which will also be paid.",
+    "text10": "If you have any additional questions regarding the work conditions, feel free to contact us. We're here to support you every step of the way!"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "At [Your Company Name], we value open communication and are here to assist you. You can reach us through the following methods:",
+    "email": "Email",
+    "emailtext": "For general inquiries, please email us. We strive to respond promptly.",
+    "whatsapp": "WhatsApp",
+    "whatsapptext": "For urgent matters, feel free to contact us via WhatsApp. We aim to address urgent inquiries quickly.",
+    "form": "Job Application Form",
+    "formtext": "To start your job application, please fill out our Job Application Form. We will review your application and get back to you as soon as possible.",
+    "footer": "We look forward to hearing from you!"
   }
 }

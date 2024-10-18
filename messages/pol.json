@@ -180,5 +180,32 @@
     "pass": "",
     "placeholderpass": "",
     "button": ""
-  }
+  },
+  "Conditions": {
+    "title": "Nasze Warunki Pracy",
+    "text1": "W [Nazwa Twojej Firmy] dbamy o zapewnienie komfortowych i wspierających warunków pracy dla wszystkich naszych pracowników.",
+    "text2": "Poniżej przedstawiamy kluczowe warunki oraz korzyści, jakie oferujemy:",
+    "paso1": "Zakwaterowanie:",
+    "text4": "Zapewniamy zakwaterowanie w cenie 500-600 zł miesięcznie, w zależności od lokalizacji i dostępnych opcji.",
+    "paso2": "Wyżywienie:",
+    "text5": "Koszt wyżywienia zależy od wybranej opcji posiłków. Oferujemy wsparcie w wyborze najdogodniejszego planu.",
+    "paso3": "Badania lekarskie:",
+    "text6": "Wszystkie niezbędne badania lekarskie potrzebne do pracy są organizowane i pokrywane przez firmę, co zapewnia pełną gotowość do pracy.",
+    "paso4": "Wynagrodzenie:",
+    "text7": "Wynagrodzenie netto wynosi 22 zł na godzinę. Dla pełnego etatu (40 godzin tygodniowo) daje to około 3,262 zł miesięcznie.",
+    "paso5": "Godziny pracy:",
+    "text8": "Standardowe godziny pracy to od poniedziałku do piątku, 40 godzin tygodniowo. Nadgodziny mogą być dostępne i są odpowiednio wynagradzane. Zwykle nie pracujemy w weekendy, jednak czasami może wystąpić dodatkowa praca w soboty, która również jest płatna.",
+    "text10": "Jeśli masz dodatkowe pytania dotyczące warunków pracy, zapraszamy do kontaktu. Jesteśmy tu, aby Cię wspierać na każdym etapie!"
+  },
+  "Contact": {
+    "title": "Skontaktuj się z nami",
+    "description": "W [Nazwa Twojej Firmy] cenimy otwartą komunikację i jesteśmy tutaj, aby Ci pomóc. Możesz się z nami skontaktować na kilka sposobów:",
+    "email": "Email: ",
+    "emailtext": "W przypadku ogólnych zapytań prosimy o kontakt pod adresem. Staramy się odpowiadać jak najszybciej.",
+    "whatsapp": "WhatsApp",
+    "whatsapptext": "W sprawach pilnych możesz skontaktować się z nami przez WhatsApp pod numerem. Staramy się szybko rozwiązywać pilne zapytania.",
+    "form": "Formularz Aplikacyjny",
+    "formtext": "Aby rozpocząć proces aplikacji o pracę, wypełnij nasz Formularz Aplikacyjny. Przejrzymy Twoją aplikację i skontaktujemy się z Tobą tak szybko, jak to możliwe.",
+    "footer": "Czekamy na Twoje wiadomości!"
+}
 }
