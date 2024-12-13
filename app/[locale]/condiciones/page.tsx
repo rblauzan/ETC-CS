@@ -8,7 +8,51 @@ export const metadata: Metadata = {
   description: "",
   // other metadata
 };
-
+const products = [
+  {
+    id: 1,
+    name: 'Focus Paper Refill',
+    href: '#',
+    imageSrc: '/images/testimonials/1.jpg',
+    imageAlt: '',
+  },
+  {
+    id: 2,
+    name: 'Focus Card Holder',
+    href: '#',
+    imageSrc: '/images/testimonials/2.jpg',
+    imageAlt: '',
+  },
+  {
+    id: 3,
+    name: 'Focus Carry Case',
+    href: '#',
+    imageSrc: '/images/testimonials/3.jpg',
+    imageAlt: '',
+  },
+  {
+    id: 3,
+    name: 'Focus Carry Case',
+    href: '#',
+    imageSrc: '/images/testimonials/4.jpg',
+    imageAlt: '',
+  },
+  {
+    id: 3,
+    name: 'Focus Carry Case',
+    href: '#',
+    imageSrc: '/images/testimonials/5.jpg',
+    imageAlt: '',
+  },
+  {
+    id: 3,
+    name: 'Focus Carry Case',
+    href: '#',
+    imageSrc: '/images/testimonials/6.jpg',
+    imageAlt: '',
+  },
+  // More products...
+]
 const ContactPage = () => {
   const t = useTranslations('Conditions');
   return (
@@ -54,6 +98,32 @@ const ContactPage = () => {
                       {t('text4')}
                     </li>
                     <br></br>
+                    <div className="bg-black">
+                        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                            <h2 id="products-heading" className="sr-only">
+                              Products
+                            </h2>
+                            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                              {products.map((product) => (
+                                <a key={product.id} href={product.href} className="group">
+                                  <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
+                                    <Image
+                                      src={product.imageSrc}
+                                      alt={product.imageAlt}
+                                      className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                      width={100}
+                                      height={100}
+                                    />
+                                  </div>
+                                  <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+                                  </div>
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        <br></br>
+
                     <h5 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">
                       {t('paso2')}
                     </h5>
@@ -106,7 +176,15 @@ const ContactPage = () => {
                         <SharePost />
                       </div>
                     </div>
-                  </div> */}
+                  </div> */}                 
+                </div>
+                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  <Link
+                    href="/contacto"
+                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                  >
+                    {t('button')}
+                  </Link>
                 </div>
               </div>
             </div>

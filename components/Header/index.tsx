@@ -112,7 +112,7 @@ const Header = () => {
                    sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <h1>ETC</h1>
+                <h1>TCP Group</h1>
                 {/* <Image
                   src="/images/logo/ETC-1.png"
                   alt="logo"

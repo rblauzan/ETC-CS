@@ -10,7 +10,8 @@ export default function Form() {
   const tr = useTranslations('Construction');
   const tra = useTranslations('Gastronomy');
   const tran = useTranslations('Time');
-  const transl = useTranslations('Pais');
+  const trans = useTranslations('Pais');
+  const transla = useTranslations('Car');
   
  const construccion = [
   { value: tr('ayudante') },
@@ -39,7 +40,7 @@ export default function Form() {
   { value: tr('calefacción') },
   { value: tr('jefe') },
   { value: tr('aislador') },
-];
+]
  const gastronomy = [
   { value: tra('jcocina')},
   { value: tra('subcocina')},
@@ -47,30 +48,17 @@ export default function Form() {
   { value: tra('cocinero')},
   { value: tra('acocinero')},
   { value: tra('limpieza')},
- ];
+ ]
   const tiempo = [
   { value : tran('time1')},
   { value : tran('time2')},
   { value : tran('time3')},
   { value : tran('time4')},
  ]
-  const  pais = [     
-  { value :transl('cuba')}, 
-  { value :transl('argentina')},
-  { value :transl('brazil')},
-  { value :transl('colombia')},
-  { value :transl('paraguay')},
-  { value :transl('venezuela')},
-  { value :transl('perú')},
-  { value :transl('uruguay')},
-  { value :transl('méxico')},
-  { value :transl('chile')},
-  { value :transl('bolivia')},
-  { value :transl('costa Rica')},
-  { value :transl('guatemala')},
-  { value :transl('honduras')},
-  { value :transl('nicaragua')},
-  { value :transl('panamá')},
+ const car = [
+  { value: transla('pintor') },
+  { value: transla('chapista') },
+  { value: transla('mecanico') }
  ]
   return (
     <form
@@ -155,27 +143,20 @@ export default function Form() {
           </div>
         </div>
         <div className="w-full px-4 md:w-1/2">
-          <div className="mb-8">
+           <div className="mb-8">
             <label
-              htmlFor="profesiones"
+              htmlFor="text"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              {t('country')}
+             {t('textcountry')}
             </label>
-            <select
-              name="pais"
+            <input
+              type="text"
+              placeholder={t('placeholdercountry')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-              required             
-            >
-              <option disabled>
-               {t('option')}
-              </option>
-              {pais.map((pais) => (
-                <option key={pais.value} defaultValue={"Seleccione un pais:"}>
-                  {pais.value}
-                </option>
-              ))}
-            </select>
+              name="pais"
+              required
+            />
           </div>
         </div>
         <div className="w-full px-4 md:w-1/2">
@@ -206,6 +187,13 @@ export default function Form() {
                 <option key={gastronomy.value} value={gastronomy.value}>
                   {" "}
                   {gastronomy.value}{" "}
+                </option>
+              ))}
+              <hr className=""></hr>
+              {car.map((car) => (
+                <option key={car.value} value={car.value}>
+                  {" "}
+                  {car.value}{" "}
                 </option>
               ))}
             </select>
