@@ -1,98 +1,53 @@
+import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
+import { Metadata } from "next";
+import { useTranslations } from "next-intl";
+
+export const metadata: Metadata = {
+  title: "Nuestros Proyectos",
+  description: "",
+};
+
+const images = [
+  { src: "/images/video/1.jpg", alt: "Image 1" },
+  { src: "/images/video/2.jpg", alt: "Image 2" },
+  { src: "/images/video/3.jpg", alt: "Image 3" },
+  { src: "/images/video/4.jpg", alt: "Image 4" },
+  { src: "/images/video/5.jpg", alt: "Image 5" },
+];
 
 
-import Image from "next/image"
-import Link from "next/link"
-
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-const products = [
-  {
-    id: 1,
-    name: 'Nomad Pouch',
-    href: '#',
-    imageSrc: '/images/testimonials/1.jpg',
-    imageAlt: '',
-  },
-  {
-    id: 2,
-    name: 'Zip Tote Basket',
-    href: '#',
-    imageSrc: '/images/testimonials/2.jpg',
-    imageAlt: '',
-  },
-  {
-    id: 3,
-    name: 'Medium Stuff Satchel',
-    href: '#',
-    imageSrc: '/images/testimonials/3.jpg',
-    imageAlt:
-      '',
-  },
-  {
-    id: 3,
-    name: 'Medium Stuff Satchel',
-    href: '#',
-    imageSrc: '/images/testimonials/4.jpg',
-    imageAlt:
-      '',
-  },
-  {
-    id: 3,
-    name: 'Medium Stuff Satchel',
-    href: '#',
-    imageSrc: '/images/testimonials/5.jpg',
-    imageAlt:
-      '',
-  },
-  {
-    id: 3,
-    name: 'Medium Stuff Satchel',
-    href: '#',
-    imageSrc: '/images/testimonials/6.jpg',
-    imageAlt:
-      '.',
-  },
-  // More products...
-]
-
-export default function Example() {
+const Home = () => {
+  const t = useTranslations('Projects');
   return (
     <>
-    <section className="pb-[100px] pt-[120px]">
+  <section className="pb-[120px] pt-[150px]">
     <div className="container">
-    <div className="bg-black">
-      <div className="mx-auto max-w-7xl overflow-hidden px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
-          {products.map((product) => (
-            <Link key={product.id} href={product.href} className="group text-sm">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                <Image
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  width={100}
-                  height={100}
-                  className="h-full w-full object-cover object-center"
-                />
-              </div>
-            </Link>
-          ))}
+          <div className="-mx-4 flex flex-wrap justify-center">
+            <div className="w-full px-4 lg:w-8/12">
+        <h1 className="mb-1 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+          {t('title')}
+        </h1>
+        <div className="mb-8 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                  <div className="flex flex-wrap items-center">
+                    <div className="mb-5 mr-10 flex items-center">
+                      <div className="mr-4">
+                    </div>
+                    <div className="mb-5 flex items-center">
+                  </div>
+                </div></div></div>
+                <li className="mb-8 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
+                       {t('text')}
+                </li> 
+        </div>
+        <div className="mb-10 w-full overflow-hidden rounded">
+          <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
+            <ImageCarousel images={images} />
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </section>
+  </section>
     </>
-  )
-}
+  );
+};
+export default Home;

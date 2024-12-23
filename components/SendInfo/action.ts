@@ -11,7 +11,6 @@ export const enviarSolicitud = async (formData: FormData) => {
   const pais = formData.get("pais");
   const profesion = formData.get("profesion");
   const tiempo = formData.get("tiempo");
-  //const archivo = formData.get("archivo");
   const texto = formData.get("texto");
   // Salvar en la base de datos
   try {

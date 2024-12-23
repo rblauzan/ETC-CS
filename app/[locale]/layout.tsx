@@ -25,7 +25,6 @@ export default async function RootLayout( { children , params : {locale} } : {
           <Header />
           {children}
           <Footer />
-        {/* <ScrollToTop /> */}
         </Providers>
         </NextIntlClientProvider>
       </body>

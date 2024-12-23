@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 export const metadata: Metadata = {
   title: "Proceso",
   description: "",
-  // other metadata
 };
 
 const BlogDetailsPage = () => {
@@ -133,27 +132,8 @@ const BlogDetailsPage = () => {
                   >
                     {t('button')}
                   </Link>
-                </div>                
-                  {/* <div className="items-center justify-between sm:flex">
-                    <div className="mb-5">
-                      <h4 className="mb-3 text-sm font-medium text-body-color">
-                        Popular Tags :
-                      </h4>
-                      <div className="flex items-center">
-                        <TagButton text="Design" />
-                        <TagButton text="Development" />
-                        <TagButton text="Info" />
-                      </div>
-                    </div>
-                    <div className="mb-5">
-                      <h5 className="mb-3 text-sm font-medium text-body-color sm:text-right">
-                        Share this post :
-                      </h5>
-                      <div className="flex items-center sm:justify-end">
-                        <SharePost />
-                      </div>
-                    </div>
-                  </div> */}
+                </div>               
+                
                 </div>
               </div>
             </div>

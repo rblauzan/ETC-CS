@@ -7,7 +7,6 @@ const Hero = () => {
   const t = useTranslations('Hero');
   return (
     <>
-      {/* <Image src="/images/video/3.jpg" alt="video image"  width={1366} height={768}/> */}
       <section
         id="home"
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"

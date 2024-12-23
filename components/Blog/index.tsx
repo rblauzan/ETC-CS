@@ -1,6 +1,3 @@
-import SectionTitle from "@/components/Common/SectionTitle";
-import SingleBlog from "./SingleBlog";
-import blogData from "./blogData";
 
 const Blog = () => {
   return (

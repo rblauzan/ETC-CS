@@ -6,52 +6,50 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Condiciones",
   description: "",
-  // other metadata
 };
 const products = [
   {
     id: 1,
-    name: 'Focus Paper Refill',
+    name: 'Cocina',
     href: '#',
     imageSrc: '/images/testimonials/1.jpg',
     imageAlt: '',
   },
   {
     id: 2,
-    name: 'Focus Card Holder',
+    name: 'Dormitorio',
     href: '#',
     imageSrc: '/images/testimonials/2.jpg',
     imageAlt: '',
   },
   {
     id: 3,
-    name: 'Focus Carry Case',
+    name: 'Baño',
     href: '#',
     imageSrc: '/images/testimonials/3.jpg',
     imageAlt: '',
   },
   {
     id: 3,
-    name: 'Focus Carry Case',
+    name: 'Dormitorio',
     href: '#',
     imageSrc: '/images/testimonials/4.jpg',
     imageAlt: '',
   },
   {
     id: 3,
-    name: 'Focus Carry Case',
+    name: 'Dormitorio',
     href: '#',
     imageSrc: '/images/testimonials/5.jpg',
     imageAlt: '',
   },
   {
     id: 3,
-    name: 'Focus Carry Case',
+    name: 'Dormitorio',
     href: '#',
     imageSrc: '/images/testimonials/6.jpg',
     imageAlt: '',
   },
-  // More products...
 ]
 const ContactPage = () => {
   const t = useTranslations('Conditions');
@@ -68,11 +66,11 @@ const ContactPage = () => {
                 <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
                     <div className="mb-5 mr-10 flex items-center">
-                      <div className="mr-4"></div>
+                      <div className="mr-4">
                     </div>
-                    <div className="mb-5 flex items-center"></div>
+                    <div className="mb-5 flex items-center">
                   </div>
-                </div>
+                </div></div></div>
                 <div>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
@@ -156,27 +154,7 @@ const ContactPage = () => {
                   <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <h4 className="mb-4 leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight">{t('text10')}                    
                   </h4>
-                </div>                
-                  {/* <div className="items-center justify-between sm:flex">
-                    <div className="mb-5">
-                      <h4 className="mb-3 text-sm font-medium text-body-color">
-                        Popular Tags :
-                      </h4>
-                      <div className="flex items-center">
-                        <TagButton text="Design" />
-                        <TagButton text="Development" />
-                        <TagButton text="Info" />
-                      </div>
-                    </div>
-                    <div className="mb-5">
-                      <h5 className="mb-3 text-sm font-medium text-body-color sm:text-right">
-                        Share this post :
-                      </h5>
-                      <div className="flex items-center sm:justify-end">
-                        <SharePost />
-                      </div>
-                    </div>
-                  </div> */}                 
+                </div>         
                 </div>
                  <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

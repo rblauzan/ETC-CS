@@ -5,16 +5,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre Nosotros",
   description: "",
-  // other metadata
 };
 
 const AboutPage = () => {
   return (
     <>
-      {/* <Breadcrumb
-        pageName="Sobre Nosotros"
-        description=""
-      /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
     </>

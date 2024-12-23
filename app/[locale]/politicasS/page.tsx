@@ -4,7 +4,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Politicas de Seguridad",
   description: "",
-  // other metadata
 };
 
 const PoliticasS = () => {

@@ -97,73 +97,7 @@ export default function Card() {
     </div>
     </div>
     </div>
-    </div>
-        {/* <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[500px] rounded bg-white px-6 py-10 shadow-three dark:bg-dark sm:p-[60px]">
-                <div className="flex items-center space-x-4">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#4b5563] text-4xl font-bold">
-                    JD
-                  </div>
-                  <div>
-                    <h1 className="text-xl font-semibold">ETC-CS</h1>
-                    <p className="font-medium text-[#9ca3af]">
-                      Software Engineer
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-6 space-y-4">
-                  <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
-                    <div className="flex items-center space-x-2">                     
-                      <MailIcon className="h-10 w-10 text-[#9ca3af]" />
-                      <Link
-                        href="#"
-                        className="text-l [#d1d5db] transition-colors hover:text-[#9ca3af] hover:underline"
-                      >
-                        john@example.com
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
-                    <div className="flex items-center space-x-2">
-                      <PhoneIcon className="h-10 w-10 text-[#9ca3af]" />
-                      <Link
-                        href="#"
-                        className="text-l [#d1d5db] transition-colors hover:text-[#9ca3af] hover:underline"
-                      >
-                        +1 (234) 567-890
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
-                    <div className="flex items-center space-x-2">
-                      <LinkIcon className="h-10 w-10 text-[#9ca3af]" />
-                      <div className="flex items-center space-x-4">
-                        <Link
-                          href="#"
-                          className="text-l [#d1d5db] transition-colors hover:text-[#9ca3af] hover:underline"
-                        >
-                          Facebook
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                    {/* <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-              Twitter
-            </Link>
-            <Link href="#" className="text-[#d1d5db] hover:underline hover:text-[#9ca3af] transition-colors">
-              GitHub
-            </Link> 
-          </div>
-        </div>
-      </div>
-        Background 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+    </div>        
         <div className="absolute left-0 top-0 z-[-1]">
           <svg
             width="1440"

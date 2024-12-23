@@ -8,11 +8,9 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ETC Construction Services",
-  description: "This is the HomePage for ETC Construction Services",
-  keywords:"europa,construccion,construction,"
-  
-  // other metadata
+  title: "TCP Group",
+  description: "This is the HomePage for TCP Group",
+  keywords:"europa,construccion,pintura"
 };
 
 export default function Home() {

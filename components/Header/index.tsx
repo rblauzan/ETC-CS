@@ -113,20 +113,6 @@ const Header = () => {
                 } `}
               >
                 <h1>TCP Group</h1>
-                {/* <Image
-                  src="/images/logo/ETC-1.png"
-                  alt="logo"
-                  width={100}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/ETC.png"
-                  alt="logo"
-                  width={100}
-                  height={30}
-                  className="hidden w-full dark:block"
-                /> */}
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
