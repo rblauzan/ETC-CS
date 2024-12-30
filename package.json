@@ -38,5 +38,5 @@
   },
   "overrides": {
         "@tanstack/react-virtual": "3.9.0"
-},
+}
 }
