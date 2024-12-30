@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.0",
@@ -35,8 +36,5 @@
     "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
-  },
-  "overrides": {
-        "@tanstack/react-virtual": "3.9.0"
-}
+  }
 }
