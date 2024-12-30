@@ -1,5 +1,5 @@
 {
-  "name": "TCP Group",
+  "name": "tcp group",
   "version": "1.0",
   "private": true,
   "scripts": {
@@ -24,6 +24,7 @@
     "taobao": "^1.0.9",
     "tw-elements-react": "^1.0.0-alpha-end",
     "zod": "^3.23.8"
+    
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
@@ -34,5 +35,8 @@
     "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2"
-  }
+  },
+  "overrides": {
+        "@tanstack/react-virtual": "3.9.0"
+},
 }
