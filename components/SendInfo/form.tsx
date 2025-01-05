@@ -87,6 +87,7 @@ export default function Form() {
               placeholder={t('placename')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="nombre"
+              autoComplete="off"
               required
             />
           </div>
@@ -104,6 +105,7 @@ export default function Form() {
               placeholder={t('placesecondname')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="apellido"
+              autoComplete="off"
               required
             />
           </div>
@@ -121,6 +123,7 @@ export default function Form() {
               placeholder={t('placeemail')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="correo"
+              autoComplete="off"
               required
             />
           </div>
@@ -138,6 +141,7 @@ export default function Form() {
               placeholder={t('placephone')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="telefono"
+              autoComplete="off"
               required
             />
           </div>
@@ -155,6 +159,7 @@ export default function Form() {
               placeholder={t('placeholdercountry')}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="pais"
+              autoComplete="off"
               required
             />
           </div>
@@ -170,7 +175,7 @@ export default function Form() {
             <select
               name="profesion"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-
+                
                required
             >
               <option disabled>
