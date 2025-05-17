@@ -79,7 +79,9 @@
     "textcountry": "Country of Birth",
     "placeholdercountry": "Enter a country, Example: Poland",
     "option1": "Select a profession",
-    "option2": " Select a option"
+    "option2": " Select a option",
+    "idiom": "Language",
+    "placeidiom": "Enter the languages you are master"
   },
   "Footer": {
     "title": "Company specialized in the construction sector backed by more than 20 years of experience.",

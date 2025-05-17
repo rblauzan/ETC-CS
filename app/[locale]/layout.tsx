@@ -20,12 +20,12 @@ export default async function RootLayout( { children , params : {locale} } : {
     <html suppressHydrationWarning lang={locale}>
       <head />
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <NextIntlClientProvider messages={messages}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

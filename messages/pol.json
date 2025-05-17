@@ -79,7 +79,9 @@
     "textcountry": "Kraj Urodzenia",
     "placeholdercountry": "Wpisz przykładowy, Kraj: Polska",
     "option1": "Wybierz zawód",
-    "option2": "Wybierz opcję"
+    "option2": "Wybierz opcję",
+    "idiom": "Języki",
+    "placeidiom": "Wpisz języki którymi się posługujesz"
   },
   "Footer": {
     "title": "Firma specjalizująca się w sektorze budowlanym, poparta ponad 20-letnim doświadczeniem.",

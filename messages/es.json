@@ -70,16 +70,17 @@
     "placeemail": "Ingrese su correo",
     "phone": "Número de Telefóno",
     "placephone": "Ingrese su número de Telefóno (+53 55001133)",
-    "country": "País de Procedencia",
     "profesiones": "Profesiones (Construcción / Gastronomia/ Mecánico)",
     "tiempo": "Tiempo que ha trabajado en la profesión",
     "infoextra": "Información extra",
     "placeinfoextra": "Puede proporcionarnos información extra que le ayude con su solicitud",
     "button": "Enviar",
     "textcountry": "País de Nacimiento",
-    "placeholdercountry": "Introduzca un pais, Ejemplo: Polonia",
+    "placeholdercountry": "Introduzca un país, Ejemplo: Polonia",
     "option1": "Seleccione una profesión",
-    "option2": " Seleccione una opcion"
+    "option2": " Seleccione una opcion",
+    "idiom": "Idioma",
+    "placeidiom":"Ingrese los idiomas que dominas"
   },
   "Footer": {
     "title": "Empresa especializada en el sector de la construcción respaldada por más de 20 años de experiencia.",

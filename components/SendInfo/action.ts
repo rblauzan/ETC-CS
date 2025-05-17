@@ -12,6 +12,7 @@ export const enviarSolicitud = async (formData: FormData) => {
   const profesion = formData.get("profesion");
   const tiempo = formData.get("tiempo");
   const texto = formData.get("texto");
+  const idioma = formData.get("idioma");
   // Salvar en la base de datos
   try {
     if (!pais || !profesion || !tiempo) {
@@ -28,6 +29,7 @@ export const enviarSolicitud = async (formData: FormData) => {
       texto: texto,
       tiempo: tiempo,
       pais: pais,
+      idioma: idioma
     });
     if (data.status === 201)
       return {
@@ -43,6 +45,5 @@ export const enviarSolicitud = async (formData: FormData) => {
         error: "Ocurrio un error al proceso sus datos, intente de nuevo más tarde",
     }
   }
-  revalidatePath("/solicitud");
   redirect("/");
 };

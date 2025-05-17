@@ -5,72 +5,70 @@ import { useRef } from "react";
 import { useTranslations } from "next-intl";
 
 export default function Form() {
-  const formRef = useRef<HTMLFormElement>(null); 
-  const t = useTranslations('Info');
-  const tr = useTranslations('Construction');
-  const tra = useTranslations('Gastronomy');
-  const tran = useTranslations('Time');
-  const trans = useTranslations('Pais');
-  const transla = useTranslations('Car');
-  
- const construccion = [
-  { value: tr('ayudante') },
-  { value: tr('albañil') },
-  { value: tr('solador') },
-  { value: tr('encofrador') },
-  { value: tr('ferralista') },
-  { value: tr('carpintero') },
-  { value: tr('carpintero2') },
-  { value: tr('cerrajero') },
-  { value: tr('demolicion') },
-  { value: tr('techador') },
-  { value: tr('pintor') },
-  { value: tr('cristal') },
-  { value: tr('solder') },
-  { value: tr('chapista') },
-  { value: tr('electrico') },
-  { value: tr('plomero') },
-  { value: tr('pulidor') },
-  { value: tr('grua') },
-  { value: tr('conductor') },
-  { value: tr('colador') },
-  { value: tr('tallista')},
-  { value: tr('gas') },
-  { value: tr('instalador') },
-  { value: tr('calefacción') },
-  { value: tr('jefe') },
-  { value: tr('aislador') },
-]
- const gastronomy = [
-  { value: tra('jcocina')},
-  { value: tra('subcocina')},
-  { value: tra('gcocina')},
-  { value: tra('cocinero')},
-  { value: tra('acocinero')},
-  { value: tra('limpieza')},
- ]
+  const formRef = useRef<HTMLFormElement>(null);
+  const t = useTranslations("Info");
+  const tr = useTranslations("Construction");
+  const tra = useTranslations("Gastronomy");
+  const tran = useTranslations("Time");
+  const trans = useTranslations("Pais");
+  const transla = useTranslations("Car");
+
+  const construccion = [
+    { value: tr("ayudante") },
+    { value: tr("albañil") },
+    { value: tr("solador") },
+    { value: tr("encofrador") },
+    { value: tr("ferralista") },
+    { value: tr("carpintero") },
+    { value: tr("carpintero2") },
+    { value: tr("cerrajero") },
+    { value: tr("demolicion") },
+    { value: tr("techador") },
+    { value: tr("pintor") },
+    { value: tr("cristal") },
+    { value: tr("solder") },
+    { value: tr("chapista") },
+    { value: tr("electrico") },
+    { value: tr("plomero") },
+    { value: tr("pulidor") },
+    { value: tr("grua") },
+    { value: tr("conductor") },
+    { value: tr("colador") },
+    { value: tr("tallista") },
+    { value: tr("gas") },
+    { value: tr("instalador") },
+    { value: tr("calefacción") },
+    { value: tr("jefe") },
+    { value: tr("aislador") },
+  ];
+  const gastronomy = [
+    { value: tra("jcocina") },
+    { value: tra("subcocina") },
+    { value: tra("gcocina") },
+    { value: tra("cocinero") },
+    { value: tra("acocinero") },
+    { value: tra("limpieza") },
+  ];
   const tiempo = [
-  { value : tran('time1')},
-  { value : tran('time2')},
-  { value : tran('time3')},
-  { value : tran('time4')},
- ]
- const car = [
-  { value: transla('pintor') },
-  { value: transla('chapista') },
-  { value: transla('mecanico') }
- ]
+    { value: tran("time1") },
+    { value: tran("time2") },
+    { value: tran("time3") },
+    { value: tran("time4") },
+  ];
+  const car = [
+    { value: transla("pintor") },
+    { value: transla("chapista") },
+    { value: transla("mecanico") },
+  ];
   return (
     <form
-    ref={formRef}
-            action={async (formData) => {
-       const result = await enviarSolicitud(formData)
+      ref={formRef}
+      action={async (formData) => {
+        const result = await enviarSolicitud(formData);
         formRef.current?.reset();
-        if(result?.error){
+        if (result?.error) {
           toast.error(result.error);
-        }
-        else 
-        toast.success(result.message);
+        } else toast.success(result.message);
       }}
     >
       <div className="-mx-4 flex flex-wrap">
@@ -80,11 +78,11 @@ export default function Form() {
               htmlFor="name"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              {t('name')}
+              {t("name")}
             </label>
             <input
               type="text"
-              placeholder={t('placename')}
+              placeholder={t("placename")}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="nombre"
               autoComplete="off"
@@ -98,11 +96,11 @@ export default function Form() {
               htmlFor="name"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              {t('secondname')}
+              {t("secondname")}
             </label>
             <input
               type="text"
-              placeholder={t('placesecondname')}
+              placeholder={t("placesecondname")}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="apellido"
               autoComplete="off"
@@ -116,11 +114,11 @@ export default function Form() {
               htmlFor="email"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              {t('email')}
+              {t("email")}
             </label>
             <input
               type="email"
-              placeholder={t('placeemail')}
+              placeholder={t("placeemail")}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="correo"
               autoComplete="off"
@@ -134,11 +132,11 @@ export default function Form() {
               htmlFor="tel"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-             {t('phone')}
+              {t("phone")}
             </label>
             <input
               type="tel"
-              placeholder={t('placephone')}
+              placeholder={t("placephone")}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="telefono"
               autoComplete="off"
@@ -147,16 +145,16 @@ export default function Form() {
           </div>
         </div>
         <div className="w-full px-4 md:w-1/2">
-           <div className="mb-8">
+          <div className="mb-8">
             <label
               htmlFor="text"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-             {t('textcountry')}
+              {t("textcountry")}
             </label>
             <input
               type="text"
-              placeholder={t('placeholdercountry')}
+              placeholder={t("placeholdercountry")}
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
               name="pais"
               autoComplete="off"
@@ -170,19 +168,19 @@ export default function Form() {
               htmlFor="profesiones"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              {t('profesiones')}
+              {t("profesiones")}
             </label>
             <select
               name="profesion"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-                
-               required
+              required
             >
-              <option disabled>
-                 {t('option1')}
-              </option>
+              <option disabled>{t("option1")}</option>
               {construccion.map((construccion) => (
-                <option key={construccion.value} defaultValue={"Seleccione una profesión"}>
+                <option
+                  key={construccion.value}
+                  defaultValue={"Seleccione una profesión"}
+                >
                   {" "}
                   {construccion.value}{" "}
                 </option>
@@ -210,23 +208,41 @@ export default function Form() {
               htmlFor="tiempo"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-             {t('tiempo')}
+              {t("tiempo")}
             </label>
             <select
               name="tiempo"
               className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-               required
+              required
             >
-              <option disabled>
-                {t('option2')}
-              </option>
+              <option disabled>{t("option2")}</option>
               {tiempo.map((tiempo) => (
-                <option key={tiempo.value} defaultValue={"Seleccione una opción"}>
+                <option
+                  key={tiempo.value}
+                  defaultValue={"Seleccione una opción"}
+                >
                   {" "}
                   {tiempo.value}
                 </option>
               ))}
             </select>
+          </div>
+        </div>
+        <div className="w-full px-4 md:w-1/2">
+          <div className="mb-8">
+            <label
+              htmlFor="idioma"
+              className="mb-3 block text-sm font-medium text-dark dark:text-white"
+            >
+              {t("idiom")}
+            </label>
+            <input
+              type="text"
+              placeholder={t("placeidiom")}
+              className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+              name="idioma"
+              autoComplete="off"
+            />
           </div>
         </div>
         <div className="w-full px-4">
@@ -235,12 +251,12 @@ export default function Form() {
               htmlFor="mensaje"
               className="mb-3 block text-sm font-medium text-dark dark:text-white"
             >
-              {t('infoextra')}
+              {t("infoextra")}
             </label>
             <textarea
               name="texto"
               rows={5}
-              placeholder={t('placeinfoextra')}
+              placeholder={t("placeinfoextra")}
               className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
             ></textarea>
           </div>
@@ -250,10 +266,10 @@ export default function Form() {
             type="submit"
             className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
           >
-            {t('button')}
+            {t("button")}
           </button>
         </div>
-      </div>     
+      </div>
     </form>
   );
 }
