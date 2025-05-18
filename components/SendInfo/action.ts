@@ -45,5 +45,6 @@ export const enviarSolicitud = async (formData: FormData) => {
         error: "Ocurrio un error al proceso sus datos, intente de nuevo más tarde",
     }
   }
+  revalidatePath("/solicitud");
   redirect("/");
 };
